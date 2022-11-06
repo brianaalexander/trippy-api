@@ -1,0 +1,35 @@
+### Users create (signup)
+
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+"name": "Test name",
+"email": "test@test.com",
+"password": "password",
+"password_confirmation": "password"
+}
+
+### Sessions create (login)
+
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+"email": "test@test.com",
+"password": "password"
+}
+
+### Trips create
+
+POST http://localhost:3000/trips.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2Njc4NDA5ODd9.LMvQ_iKVu_mhqLzGEOILznRgCmYPR-C6Pi74B-rGJ68
+Content-Type: application/json
+
+{
+"user_id": 2,
+"name": "Weekend",
+"image_url": "https://picjumbo.com/wp-content/uploads/the-golden-gate-bridge-sunset-1080x720.jpg",
+"start_time": "2022-10-08",
+"end_time": "2022-10-10"
+}
