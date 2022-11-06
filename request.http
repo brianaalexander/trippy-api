@@ -20,6 +20,10 @@ Content-Type: application/json
 "password": "password"
 }
 
+### Trips Index
+GET http://localhost:3000/trips.json
+
+
 ### Trips create
 
 POST http://localhost:3000/trips.json
