@@ -37,3 +37,6 @@ Content-Type: application/json
 "start_time": "2022-10-08",
 "end_time": "2022-10-10"
 }
+
+### Trips Show
+GET http://localhost:3000/trips/1.json
