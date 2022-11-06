@@ -40,3 +40,17 @@ Content-Type: application/json
 
 ### Trips Show
 GET http://localhost:3000/trips/1.json
+
+### Places Create
+POST http://localhost:3000/places.json
+Content-Type: application/json
+
+{
+  "trip_id": 3,
+  "address": "123 Main Street",
+  "name": "Birthday",
+  "description": "One year older",
+  "image_url": "https://i.pinimg.com/originals/3f/3b/84/3f3b845270d4d175ddfc84aecf03d5d3.jpg",
+  "start_time": "2022-07-17",
+  "end_time": "2022-07-22"
+}
