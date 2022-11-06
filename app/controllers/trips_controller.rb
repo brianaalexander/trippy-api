@@ -16,7 +16,7 @@ class TripsController < ApplicationController
   end
 
   def show
-    trip = Trip.find_by(id: params[:id])
-    render json: trip.as_json
+    @trip = Trip.find_by(id: params[:id])
+    render template: "trips/show"
   end
 end
