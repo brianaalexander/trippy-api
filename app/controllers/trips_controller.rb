@@ -25,7 +25,7 @@ class TripsController < ApplicationController
     client.messages.create(
       from: from,
       to: to,
-      body: "Hey friend!",
+      body: "Congratulations! You have planned a new trip.",
     )
     render json: trip.as_json
   end
