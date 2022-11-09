@@ -48,3 +48,4 @@ group :development do
   # gem "spring"
 end
 
+gem 'twilio-ruby', '~> 5.73.1'
